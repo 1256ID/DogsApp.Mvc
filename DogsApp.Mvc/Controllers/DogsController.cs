@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 namespace DogsApp.Mvc.Controllers;
 
-[Route("Dogs")]
+
 public class DogsController : Controller
 {
     DogService dogService = new DogService();
@@ -10,7 +10,7 @@ public class DogsController : Controller
     public IActionResult Index()
     {
         var model = dogService.GetAllDogs(); 
-        return View();
+        return View(model);
     }
 
 }

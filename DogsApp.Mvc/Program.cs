@@ -5,14 +5,13 @@ namespace DogsApp.Mvc
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            builder.Services.AddControllersWithViews();
+
             var app = builder.Build();
 
-            app.MapGet("/", () => "Hello World!");
-            //Hej från Philippe
-            //Hej från Bror
-
+       
+            app.MapControllers();
             app.Run();
         }
     }
 }
-//Hej från alla oss!
