@@ -8,8 +8,8 @@ namespace DogsApp.Mvc
             var app = builder.Build();
 
             app.MapGet("/", () => "Hello World!");
-            
-            
+            //Hej från Philippe
+            //Hej från Bror
 
             app.Run();
         }
