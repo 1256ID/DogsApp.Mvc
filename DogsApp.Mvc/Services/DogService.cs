@@ -9,4 +9,5 @@ public class DogService
     public Dog[] GetAllDogs() => dogs.ToArray();
     public Dog? GetDogById(int id) => dogs.SingleOrDefault(c => c.Id.Equals(id));
 
+
 }
