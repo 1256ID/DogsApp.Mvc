@@ -9,7 +9,6 @@ namespace DogsApp.Mvc
 
             app.MapGet("/", () => "Hello World!");
             //Hej från Philippe
-            // Hej
 
             app.Run();
         }
