@@ -9,7 +9,7 @@ namespace DogsApp.Mvc
 
             var app = builder.Build();
 
-       
+
             app.MapControllers();
             app.Run();
         }

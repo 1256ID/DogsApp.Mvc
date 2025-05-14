@@ -7,11 +7,15 @@
 </head>
 <body>
     <ul>
+        
         @foreach(var dog in Model)
         {
+            
             <li>Name: @dog.Name, Age: @dog.Age</li>
         }
-        </ul>
+    </ul>
+
+        <a href="/create">Add dog</a>
     
     </body>
-    </html>
+</html>
